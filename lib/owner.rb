@@ -1,13 +1,13 @@
 class Owner
  attr_reader :name, :species
  
- @@all = []
+   @@all = []
 
  def initialize (name)
    @name = name
    @species = "human"
    @@all << self
-end
+ end
 
  def say_species
    "I am a #{species}."
@@ -19,7 +19,7 @@ end
  
  
 
-def self.count
+ def self.count
    @@all.length
  end
  
@@ -28,7 +28,11 @@ def self.count
  end
  
  def cats 
-   Cats.all.select {|c| }
+   Cat.all.select {|c| c.owner == self}
+ end
+
+ def dogs 
+   Dog.all.select {|d| d.owner == self}
  end
  
 end
