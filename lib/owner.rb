@@ -9,7 +9,7 @@ class Owner
  end
 
  def species
-   "I am a human."
+   "human."
  end
  
  def self.all
