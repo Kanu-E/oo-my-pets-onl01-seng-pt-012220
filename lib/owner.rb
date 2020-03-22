@@ -7,11 +7,12 @@ class Owner
  end
 
  def species
-   "I am a #{species}."
+   "I am a human."
  end
  
  def self.all
    @@all
  end
+ 
  
 end
