@@ -28,7 +28,7 @@ def self.count
  end
  
  def cats 
-   self.Cat.all
+   Cats.all.select {|c| }
  end
  
 end
