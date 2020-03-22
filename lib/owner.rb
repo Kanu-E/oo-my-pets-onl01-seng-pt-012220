@@ -55,6 +55,6 @@ class Owner
    cats.collect {|c| c.mood = "nervous"}
    dogs.collect {|d| d.mood = "nervous"}
    pets = dogs + cats
-   
+   pets.each {|p| p.owner = nil}
  end
 end
