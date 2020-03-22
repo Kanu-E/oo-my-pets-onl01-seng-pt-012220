@@ -52,8 +52,6 @@ class Owner
  end
  
  def sell_pets
-   cats.collect {|c| c.mood = "nervous"}
-   dogs.collect {|d| d.mood = "nervous"}
    pets = dogs + cats
    pets.each {|p| p.mood = "nervous"}
    pets.each {|p| p.owner = nil}
