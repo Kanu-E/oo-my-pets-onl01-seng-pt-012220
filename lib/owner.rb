@@ -27,4 +27,8 @@ def self.count
    @@all.clear
  end
  
+ def cats 
+   self.Cats.all
+ end
+ 
 end
