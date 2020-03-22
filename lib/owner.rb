@@ -57,5 +57,9 @@ class Owner
    pets.each {|p| p.owner = nil}
  end
  
+ def list_pets
+   pets = dogs + cats
+  
+ end
  
 end
